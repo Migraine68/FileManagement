@@ -7,5 +7,4 @@ p = r'C:\Users\dgriffi6\Documents\CareMedic'
 
 sdl.mypath(p)
 
-print(p)
 print(os.path.basename(p))

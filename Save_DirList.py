@@ -1,11 +1,16 @@
+# Function to loop through every file within path provided and write the
+#   [Path|Filename|Last Accessed Date|Size in bytes] to a file.
 import os
 from os.path import join
 from datetime import date as dt
 
+#Added for Work to save files to 1 local location
+c = r'C:\FileMgmt'
+
 
 def mypath(path):
     pname = os.path.basename(path)
-    dirfile = open(path + '\\' + pname + '_DirList.txt', 'w')
+    dirfile = open(c + '\\' + pname + '_DirList.txt', 'w')
 
     for foldername, subfolders, filenames in os.walk(path):
 

@@ -3,8 +3,7 @@ import Save_DirList
 
 sdl = Save_DirList
 
-p = r'C:\Users\dgriffi6\Documents\CareMedic'
-
+p = r'C:\users\migra'
 sdl.mypath(p)
 
 print(p)

@@ -9,12 +9,13 @@ c = r'C:\FileMgmt'
 
 
 def mypath(path):
+    os.chdir(path)
     pname = os.path.basename(path)
     dirfile = open(c + '\\' + pname + '_DirList.txt', 'w')
 
     for foldername, subfolders, filenames in os.walk(path):
 
-        for subfolder in subfolders:
+        #for subfolder in subfolders:
 
             for filename in filenames:
                 mdt = dt.fromtimestamp(os.stat(join(foldername, filename)).st_atime)

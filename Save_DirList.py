@@ -16,10 +16,10 @@ def mypath(path):
 
         for subfolder in subfolders:
 
-            for filename in filenames:
-                mdt = dt.fromtimestamp(os.stat(join(foldername, filename)).st_atime)
-                num = int(os.stat(join(foldername, filename)).st_size)
-                dirfile.writelines(foldername + ': ' + filename + ': ' + str(mdt) + ': ' + str(
-                    num) + '\n')
+        for filename in filenames:
+            mdt = dt.fromtimestamp(os.stat(join(foldername, filename)).st_atime)
+            num = int(os.stat(join(foldername, filename)).st_size)
+            dirfile.writelines(foldername + ': ' + filename + ': ' + str(mdt) + ': ' + str(
+                num) + '\n')
 
     dirfile.close()

@@ -3,7 +3,6 @@ import Save_DirList
 
 sdl = Save_DirList
 
-p = r'C:\users\dgriffi6\documents'
+p = r'C:\Users\dgriffi6\Downloads'
+p2 = os.path.abspath(p)
 sdl.mypath(p)
-
-print(os.path.basename(p))
